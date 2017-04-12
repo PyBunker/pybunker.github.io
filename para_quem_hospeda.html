@@ -46,9 +46,17 @@
             background-color:  #f1dc1c;
             margin-top: 2rem;
         }
-    </style>
+          /*Contact section*/
+        #contact .fa {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1C2331;
+        }
+         .footer-content > *, .footer-content ul>li>a{
+            color: #3E4551;
+        }
 
-</head>
+    </style>
 
 </head>
 
@@ -77,10 +85,6 @@
                         </li>
                     </ul>
 
-                    <ul class="nav navbar-nav pull-right">
-                        <li><div onclick="alert()" class="img-rounded profile-img"></div></li>
-                    </ul>
-
                 </div>
             </div>
         </nav>
@@ -97,15 +101,13 @@
         </div>
 
         <!--Section: Inciativa-->
-        <section id="about" class="text-center wow fadeIn" data-wow-delay="0.8s">
-            <p>Faça um Fork do nosso site no GitHub neste <a href="https://github.com/PyBunker/pybunker.github.io">Link</a></p>
-            <br>
-            <p>Copie o código comentando no arquivo vagas.txt<br>
-            Altere os dados <br>
-            faça um Pull Request no nosso código<br>
-            e PRONTO! já estará disponível para receber pessoas da comunidade!
-            </p>
-            <p>Qualquer dúvida entre em contato com a gente! iremos te ajudar em todos os passos!</p>
+        <section id="about" class="text-center wow fadeIn" data-wow-delay="0.5s">
+            <p>Faça um Fork do site: <a href="https://github.com/PyBunker/pybunker.github.io">PyBunker</a></p>
+            <p>Na pasta vagas, faça uma copia do <strong>arquivo exemplo_de_como_anunciar_vaga.json</strong>, renomeie
+                com seu primeiro e ultimo nome.Ex: fulano_detal.json</p>
+            <p>Faça um commit e pull request no respositório oficial</p>
+            PRONTO! já estará disponível para receber pessoas da comunidade!
+            <p>Qualquer dúvida entre em contato com a gente! Guiaremos você em todos os passos!</p>
 
         </section>
         <!--Section: Inciativa-->
@@ -116,7 +118,7 @@
             <h2 class="h2-responsive wow fadeIn">Entre em contato</h2>
         </div>
     </div>
-        <!--Section: Contato-->
+         <!--Section: Contato-->
         <section id="contact">
             <div class="row">
 
@@ -148,11 +150,12 @@
                 <!--/column-->
         </section>
         <!--Section: Contato-->
+        <!--Section: Contato-->
     <!--/ Main container-->
 
 
     <!--Footer-->
-    <footer class="page-footer center-on-small-only">
+    <footer class="page-footer center-on-small-only footer-content">
 
         <!--Footer Links-->
         <div class="container-fluid">
@@ -211,13 +214,6 @@
         <!--/.Footer Links-->
 
 
-        <!--Copyright-->
-        <div class="footer-copyright">
-            <div class="container-fluid">
-                © 2017 Copyright: <a href="https://pybunker.github.io"> PyBunker </a>
-            </div>
-        </div>
-        <!--/.Copyright-->
 
     </footer>
     <!--/.Footer-->
@@ -239,6 +235,9 @@
 
 
     <!-- Animations init-->
+    <script>
+        new WOW().init();
+    </script>
 
 
 

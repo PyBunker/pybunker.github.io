@@ -46,6 +46,17 @@
             background-color: #f1dc1c;
             margin-top: 2rem;
         }
+          /*Contact section*/
+
+        #contact .fa {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1C2331;
+        }
+         .footer-content > *, .footer-content ul>li>a{
+            color: #3E4551;
+        }
+
     </style>
 
 </head>
@@ -108,7 +119,7 @@
     </div>
 
     <!--Section: Inciativa-->
-    <section id="about" class="text-center wow fadeIn" data-wow-delay="0.8s">
+    <section id="iniciativa" class="text-center wow fadeIn" data-wow-delay="0.8s">
         <div class="row">
             <div class="col-md-4">
                 <ul class="text-center">
@@ -117,6 +128,7 @@
                         Vagas no sofá: 00<br>
                         Contato: @jamesperes</p>
                     </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -162,7 +174,7 @@
 
 
 <!--Footer-->
-<footer class="page-footer center-on-small-only">
+<footer class="page-footer center-on-small-only footer-content">
 
     <!--Footer Links-->
     <div class="container-fluid">
@@ -221,13 +233,7 @@
     <!--/.Footer Links-->
 
 
-    <!--Copyright-->
-    <div class="footer-copyright">
-        <div class="container-fluid">
-            © 2017 Copyright: <a href="https://pybunker.github.io"> PyBunker </a>
-        </div>
-    </div>
-    <!--/.Copyright-->
+
 
 </footer>
 <!--/.Footer-->
@@ -248,7 +254,10 @@
 <script type="text/javascript" src="js/mdb.min.js"></script>
 
 
-<!-- Animations init-->
+    <!-- Animations init-->
+    <script>
+        new WOW().init();
+    </script>
 
 
 </body>
