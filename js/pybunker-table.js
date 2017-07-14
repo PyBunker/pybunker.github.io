@@ -4,6 +4,6 @@ var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1Kqy-aL0Q-I8rbgdzxTf
 $('#host-table').sheetrock({
     url: mySpreadsheet,
     labels: ['Nome', 'E-mail', 'Telegram', 'Evento a Hospedar', 'Qtde. de Vagas', 'Observação'],
-    query: "select B,C,D,E,F,G order by A desc",
+    query: "select B,C,D,E,F,G where H != 'Past' order by A desc",
     fetchSize: 10
 });
